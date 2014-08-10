@@ -1,0 +1,44 @@
+extends bootstrap
+append head
+append style
+  mixin stylesheet('css/index.css')
+append script
+  mixin javascript('js/runtime.min.js')
+  mixin javascript('js/pagination.js')
+  mixin javascript('js/app.js')
+block content
+  .container-fluid.container-background
+    .navbar.navbar-inverse
+      .navbar-inner
+        .span3
+        .span8
+          a.brand(href='/home') 首页
+          ul.nav.navbar-nav
+            li.divider-vertical
+            li.active: a(href='/home') 首页
+            li.divider-vertical
+            li: a(href='/member') 师资力量
+            li.divider-vertical
+            li: a(href='/course') 开设课程
+            li.divider-vertical
+            li: a(href='/home') 最新消息
+      br
+      .row-fluid
+          block page
+          .span2
+            .pin-wrapper
+              .pinned.note-container
+                .note
+                  h4.text-center 联系我们 
+                  br
+                  p 电话: &nbsp012345678
+                  p Q&nbspQ : &nbsp012345678
+                  p 地址： 大厂回族自治县地方算法赛法风俗的符号哦ijfie
+
+    block footer
+      footer.text-center
+        hr.featurette-divider
+        .span8
+          p.pull-right
+            a(href="#") 返回顶部
+          p © Miyayx  2013 

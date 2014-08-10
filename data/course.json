@@ -1,0 +1,33 @@
+[
+    {
+      "src":"../img/course/erhu.png",
+      "name":"二胡",
+      "info":"课程介绍-二胡"
+    },
+    {
+      "src":"../img/course/gudianjita.png",
+      "name":"古典吉他",
+      "info":"课程介绍-古典吉他"
+    },
+    {
+      "src":"../img/course/pipa.png",
+      "name":"琵琶",
+      "info":"课程介绍-琵琶"
+    },
+    {
+      "src":"../img/course/sakesi.png",
+      "name":"萨克斯",
+      "info":"课程介绍-萨克斯"
+    },
+    {
+      "src":"../img/course/xiaotiqin.png",
+      "name":"小提琴",
+      "info":"课程介绍-小提琴"
+    },
+    {
+      "src":"../img/course/yangqin.png",
+      "name":"扬琴",
+      "info":"课程介绍-扬琴"
+    }
+
+]

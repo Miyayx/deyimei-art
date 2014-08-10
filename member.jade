@@ -1,0 +1,41 @@
+extends layout
+append head
+  title 教师团队
+block page
+  .span2
+  .span8#member
+    - member.forEach(function(m, i){
+    - if(i%2==0){
+    .row
+      .span8.description
+        img.pull-left(src='#{m.src}' alt)
+        .span5
+          h4 #{m.name}
+          p #{m.description}
+      .span4
+        table.table.infotable
+          - for (var k in m["info"]){
+          -   v = m["info"][k]
+          tr
+            td: strong #{k}
+            td: #{v}
+          - }
+    - }else{
+    .row
+      .span4
+        table.table.infotable
+          - for (var k in m["info"]){
+          -   v = m["info"][k]
+          tr
+            td: strong #{k}
+            td: #{v}
+          - }
+      .span8.description
+        .span5
+          h4 #{m.name}
+          p #{m.description}
+        img.pull-right(src='#{m.src}' alt)
+    - }
+    br
+    br
+    - })

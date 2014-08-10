@@ -1,0 +1,53 @@
+[
+    {
+        "src":"../img/member/01.png",
+        "name":"Adam Stiengold",
+        "description":"Founder & co director fsdfasdfasflewkfsiofhsodfhdsoi",
+        "info":{
+          "email":"aaa@aaa.com",
+          "phone":"194734789234",
+          "place":"河北",
+          "specialty":"吉他,笛子",
+          "degree":"9级"
+        }
+
+    },
+    {
+        "src":"../img/member/02.png",
+        "name":"Adam Stiengold",
+        "description":"Founder & co director fsdfasdfasflewkfsiofhsodfhdsoi",
+        "info":{
+          "email":"aaa@aaa.com",
+          "phone":"194734789234",
+          "place":"河北",
+          "specialty":"吉他,钢琴",
+          "degree":"9级"
+        }
+
+    },
+    {
+        "src":"../img/member/03.png",
+        "name":"Adam Stiengold",
+        "description":"Founder & co director fsdfasdfasflewkfsiofhsodfhdsoi",
+        "info":{
+          "email":"aaa@aaa.com",
+          "phone":"194734789234",
+          "place":"河北",
+          "specialty":"二胡，笛子",
+          "degree":"9级"
+        }
+    },
+    {
+        "src":"../img/member/04.png",
+        "name":"Adam Stiengold",
+        "description":"Founder & co director fsdfasdfasflewkfsiofhsodfhdsoi",
+        "info":{
+          "email":"aaa@aaa.com",
+          "phone":"194734789234",
+          "place":"河北",
+          "specialty":"葫芦丝",
+          "degree":"9级"
+        }
+
+    }
+]

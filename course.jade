@@ -1,0 +1,38 @@
+extends layout
+append head
+  title 开设课程
+append page
+  .span2
+  .span8#course
+    - course.forEach(function(c, i){
+    - if(i%2==0){
+    .row
+      .span4.item.pull-left(data-value='#{i}')
+        img(src='#{course[i].src}' alt)
+        .course-caption
+          h4 #{c.name}
+      .span4.item-info
+      .span4.item.pull-right(data-value='#{i+1}')
+        img(src='#{course[i+1].src}' alt)
+        .course-caption
+          h4 #{course[i+1].name}
+    br
+    br
+    - }else{
+    - }
+    - })
+
+
+append script
+  script(type='text/javascript').
+    var test = 0;
+    $.getJSON('/course-info',function(data){
+      $('#course .item').on("mouseover",
+        function(){
+            $(this).parent().parent().find('.item-info div').remove();
+            var i = $(this).attr("data-value");
+            var $span = $(this).parent().find('.item-info');
+            $span.append("<div><p>"+data[i].info+"</p></div>");
+            $span.fadeIn(500);
+          });
+     });

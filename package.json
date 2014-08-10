@@ -1,0 +1,9 @@
+{
+    "name":"course_propaganda",
+    "version":"0.0.1",
+    "description":"webpage for course propaganda",
+    "dependencies":{
+        "express":"4.6.1",
+        "jade":"1.4.2"
+    }
+}
