@@ -1,54 +1,35 @@
 extends layout
 append head
-  title 首页
+  title 德艺美
+append logo-bg
+  .logo-bg.text-center
+    img.center.img(src='./img/home/home-bg-red.jpg')
+block home-bar
+  li.active: a(href='/home') 走进德艺美
 append page
- .span2
- .span8#home
-   #myCarousel.carousel.slide
-     ol.carousel-indicators
-       - for(var i = 0; i < news.length; i++){
-       -   if (i==0){
-       li.active(data-target='#myCarousel' data-slide-to='#{i}') 
-       -   }else{
-       li(data-target='#myCarousel' data-slide-to='#{i}') 
-       -    }
-       -}
-     .carousel-inner
-       - news.forEach(function(n, i){
-       - if(i==0){
-       .item.active
-         img(src='#{n.src}' alt)
-         .carousel-caption 
-           h4 #{n.caption}
-           p #{n.detail}
-       - }else{
-       .item
-         img(src='#{n.src}' alt)
-         .carousel-caption 
-           h4 #{n.caption}
-           p #{n.detail}
-       - }
-       - })
-     a.left.carousel-control(href='#myCarousel' data-slide='prev') ‹ 
-     a.right.carousel-control(href='#myCarousel' data-slide='next') ›
+  .col-md-9.col-md-offset-1#home
 
    br
-   .row
-     .span3.text-center
-       img.center.img-circle(src="./img/logo/01.png")
-       h3 How we began
-       p I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.
-     .span3.text-center
-       img.img-circle(src="./img/logo/02.png")
-       h3 Philosophy
-       p I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.
-     .span3.text-center
-       img.img-circle(src="./img/logo/03.png")
-       h3 Our Work
-       p I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.
-     .span3.text-center
-       img.img-circle(src="./img/logo/04.png")
-       h3 Get in touch
-       p I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.
+   #home-info
+     .col-md-12
+       .row
+         img.col-md-1.img-circle(src="./img/logo/04.png")
+         h3 走进德艺美
+       p &nbsp;&nbsp;&nbsp;&nbsp;学校现由11个院系组成，2个师范专修学院．学校设有本科，硕士，博士学位。学校教学设备完善、设施齐全，拥有自己的大型图书馆及电脑俱乐部、健身房、游泳馆、体育馆等。
+     .col-md-12
+       .row
+         img.col-md-1.img-circle(src="./img/logo/01.png")
+         h3 德艺课堂
+       p &nbsp;&nbsp;&nbsp;&nbsp;强大的师资力量和完善的专业课、文化课教育，是北京群星表演艺术学校教学质量的保证。学校根据每个学生的个性特点和专业素质，精心制定出适合每个学生的学习计划。各专业课聘请中央戏剧学院、北京电影学院、中国传媒大学、中央音乐学院、中央美术学院等著名高校的教授专家讲授；文化课由国家级重点职业高中的资深教师授课。学校校艺委员会由田壮壮、葛优、姜文、陈凯歌等著名演员和表演艺术家组成，李雪健、濮存晰、吴若甫、宋丹丹、冯小宁、方青卓、朱时茂、陈佩斯、王志文、岳红等知名导演和表演艺术家先后到我校进行讲座，指导我校学生学习，和学生面对面的交流。
+     .col-md-12
+       .row
+         img.col-md-1.img-circle(src="./img/logo/02.png")
+         h3 招生信息
+       p &nbsp;&nbsp;&nbsp;&nbsp;我们真诚欢迎热爱表演艺术的朋友们来到群星，因为这里是群星闪烁的星空，这里是你施展才华的舞台，这里是你通往艺术殿堂的桥梁和纽带，在这里，你将成为星空中最为闪烁的一颗！
+     .col-md-12
+       .row
+         img.col-md-1.img-circle(src="./img/logo/03.png")
+         h3 院校合作
+       p &nbsp;&nbsp;&nbsp;&nbsp;学校积极开展各类合作办学活动，为学生将来的发展提供更大的拓展空间。1999年与国家级重点职业高中北京黄庄职业高中联合创办了国有民办的艺术类职高专业，为学生将来通往高等艺术教育开辟了一条新的路子；2002年，北京群星表演艺术学校与中国传媒大学携手联办“大学影视表演艺术专业”；2003年与首都师范大学联合举办了影视剧大专班；2005年与山东荷泽学院进行合作，创办本科、续本、大专、中专等不同层次影视剧表演、播音与主持人等专业。形成了北京群星表演艺术学校多层次、多方位，从高中、大学到成人教育的一体化办学格局，为学生的升学和进一步深造奠定了良好的基础。
 
 

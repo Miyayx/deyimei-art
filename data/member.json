@@ -1,53 +1,22 @@
 [
     {
-        "src":"../img/member/01.png",
-        "name":"Adam Stiengold",
-        "description":"Founder & co director fsdfasdfasflewkfsiofhsodfhdsoi",
-        "info":{
-          "email":"aaa@aaa.com",
-          "phone":"194734789234",
-          "place":"河北",
-          "specialty":"吉他,笛子",
-          "degree":"9级"
-        }
-
+        "src":"../img/member/刘国昌老师.jpg",
+        "name":"刘国昌",
+        "description":"毕业于中央戏剧学院表演系 。演员、导演、客座教授。原新疆话剧团团长，原新疆电视台电视剧部主任。曾在新疆艺术学院表演系、中央戏剧学院成人教育学院表演系任教。现任我校专职表演教师。"
     },
     {
-        "src":"../img/member/02.png",
-        "name":"Adam Stiengold",
-        "description":"Founder & co director fsdfasdfasflewkfsiofhsodfhdsoi",
-        "info":{
-          "email":"aaa@aaa.com",
-          "phone":"194734789234",
-          "place":"河北",
-          "specialty":"吉他,钢琴",
-          "degree":"9级"
-        }
-
+        "src":"../img/member/付聪老师.jpg",
+        "name":"付聪",
+        "description":"中国传媒大学05级表演本科，中国传媒大学09级电影学硕士研究生。代表作品有：《女人当官》、《铁流1949》、《大国手》、《石榴红了》、《天使的微笑》等。曾获得全国小戏小品大赛“观众最喜爱演员”奖，全国戏剧文化奖“表演金奖”"
     },
     {
-        "src":"../img/member/03.png",
-        "name":"Adam Stiengold",
-        "description":"Founder & co director fsdfasdfasflewkfsiofhsodfhdsoi",
-        "info":{
-          "email":"aaa@aaa.com",
-          "phone":"194734789234",
-          "place":"河北",
-          "specialty":"二胡，笛子",
-          "degree":"9级"
-        }
+        "src":"../img/member/何炳珠.jpg",
+        "name":"何炳珠 ",
+        "description":"原中央戏剧学院副院长，表演系资深教授，硕士生导师，教学经验丰富，培养的学生有：姜文，吕丽萍，岳红，李亚鹏，王学兵，陈建斌，巍子，李宗瀚等。导演的剧目有：《家庭大事》 、《饥饿海峡》 、《第十二夜》 、《结婚》 、《我和春天有个约会》 等。论著有《观察人物练习在表演教学中的应用》 ，《创造人物形象的教学途径》，《排演“第十二夜”所想到的》 ，《表演入门与表演考试》 等。"
     },
     {
-        "src":"../img/member/04.png",
-        "name":"Adam Stiengold",
-        "description":"Founder & co director fsdfasdfasflewkfsiofhsodfhdsoi",
-        "info":{
-          "email":"aaa@aaa.com",
-          "phone":"194734789234",
-          "place":"河北",
-          "specialty":"葫芦丝",
-          "degree":"9级"
-        }
-
+        "src":"../img/member/吕晓刚老师.jpg",
+        "name":"吕晓刚",
+        "description":"北京群星表演艺术学校常务校长，1982毕业于北京电影学院表演系 中国传媒大学影视表演本科生讲师。主要影视话剧作品有：话剧《骆驼祥子》；电影《田野》《端盘子姑娘》、《许茂和他的女儿们》 《我们的田野》、《乡思》、《大气层消失》、《遭遇激情》；电视剧作品：《海涛声声》 《初次见面》 《八月的乡村》 "
     }
 ]

@@ -8,37 +8,44 @@ append script
   mixin javascript('js/app.js')
 block content
   .container-fluid.container-background
-    .navbar.navbar-inverse
-      .navbar-inner
-        .span3
-        .span8
-          a.brand(href='/home') 首页
+    .navbar.navbar-inverse.narbar-fixed-top
+      .container
+        .navbar-header
+          a.brand(href='/home') 德艺美
+        .collapse.navbar-collapse
           ul.nav.navbar-nav
             li.divider-vertical
-            li.active: a(href='/home') 首页
+            block home-bar
+              li: a(href='/home') 走进德艺美
             li.divider-vertical
-            li: a(href='/member') 师资力量
+            block member-bar
+              li: a(href='/member') 专业师资
             li.divider-vertical
-            li: a(href='/course') 开设课程
+            block course-bar
+              li: a(href='/course') 课程设置
             li.divider-vertical
-            li: a(href='/home') 最新消息
-      br
-      .row-fluid
-          block page
-          .span2
-            .pin-wrapper
-              .pinned.note-container
-                .note
-                  h4.text-center 联系我们 
-                  br
-                  p 电话: &nbsp012345678
-                  p Q&nbspQ : &nbsp012345678
-                  p 地址： 大厂回族自治县地方算法赛法风俗的符号哦ijfie
+            block video-bar
+              li: a(href='/video') 影像图片
+            li.divider-vertical
+    block logo-bg
+
+    .container
+        block page
+        .col-md-offset-10
+          .pin-wrapper
+            .pinned.note-container
+              .note
+                h4.text-center 联系我们 
+                b 联系电话:
+                p &nbsp012345678
+                p Q&nbspQ : &nbsp012345678
+                p 微信平台: deyimei
+                p 地址： 大厂回族自治县地方算法赛法风俗的符号哦ijfie
 
     block footer
       footer.text-center
         hr.featurette-divider
-        .span8
+        .col-xs-8
           p.pull-right
             a(href="#") 返回顶部
-          p © Miyayx  2013 
+          p © Miyayx  2014 

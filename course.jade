@@ -1,38 +1,42 @@
 extends layout
 append head
-  title 开设课程
+  title 课程设置
+block course-bar
+  li.active: a(href='/course') 课程设置
 append page
-  .span2
-  .span8#course
-    - course.forEach(function(c, i){
-    - if(i%2==0){
-    .row
-      .span4.item.pull-left(data-value='#{i}')
-        img(src='#{course[i].src}' alt)
-        .course-caption
-          h4 #{c.name}
-      .span4.item-info
-      .span4.item.pull-right(data-value='#{i+1}')
-        img(src='#{course[i+1].src}' alt)
-        .course-caption
-          h4 #{course[i+1].name}
-    br
-    br
-    - }else{
-    - }
+  .col-md-9.col-md-offset-1#course
+    .alert.alert-success &nbsp;&nbsp;&nbsp;&nbsp;我们真诚欢迎热爱表演艺术的朋友们来到群星，因为这里是群星闪烁的星空，这里是你施展才华的舞台，这里是你通往艺术殿堂的桥梁和纽带，在这里，你将成为星空中最为闪烁的一颗！
+
+    - course.forEach(function(t, i){
+      //type
+      .col-md-12#course
+        .row
+           //img.col-md-1.img-circle(src="./img/logo/02.png")
+           img.col-md-1.img-circle(src='#{t.logo}')
+           h3 #{t.type}
+        .row
+          - t["course"].forEach(function(c, j){
+          .col-md-3
+            a.thumbnail.col-md-12
+              img(src='#{c.src}' alt)
+              .course-caption
+                h4 #{c.name}
+          - })
+        br
+        br
     - })
 
 
-append script
-  script(type='text/javascript').
-    var test = 0;
-    $.getJSON('/course-info',function(data){
-      $('#course .item').on("mouseover",
-        function(){
-            $(this).parent().parent().find('.item-info div').remove();
-            var i = $(this).attr("data-value");
-            var $span = $(this).parent().find('.item-info');
-            $span.append("<div><p>"+data[i].info+"</p></div>");
-            $span.fadeIn(500);
-          });
-     });
+//append script
+//  script(type='text/javascript').
+//    var test = 0;
+//    $.getJSON('/course-info',function(data){
+//      $('#course .item').on("mouseover",
+//        function(){
+//            $(this).parent().parent().find('.item-info div').remove();
+//            var i = $(this).attr("data-value");
+//            var $span = $(this).parent().find('.item-info');
+//            $span.append("<div><p>"+data[i].info+"</p></div>");
+//            $span.fadeIn(500);
+//          });
+//     });
