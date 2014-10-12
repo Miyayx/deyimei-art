@@ -8,5 +8,13 @@ $(document).ready(function() {
 	$('#course item').on('click', function() {
 		alert();
 	});
+
+	//$('#note').mouseenter(function() {
+	//	$('#note #contact').removeClass("hidden");
+	//	$("#note #contact ").show();
+	//}).mouseleave(function() {
+	//	$('#note #contact ').hide("slow",function(){});
+	//});
+
 });
 
