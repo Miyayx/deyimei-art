@@ -70,6 +70,20 @@ app.get('/course-info', function(req,res){
   res.send(JSON.parse(course));
 });
 
+app.get('/video', function(req, res) {
+	var options = null;
+	options || (options = {});
+	options.client != null || (options.client = true);
+	options.compileDebug != null || (options.compileDebug = false);
+	options.filename || (options.filename = 'video.jade');
+
+	var template = fs.readFileSync('./video.jade');
+	var page = jade.compile(template, options);
+	var video = fs.readFileSync('./data/video.json');
+	res.send(page({
+		video: JSON.parse(video)
+	}));
+});
 
 app.use(express.static(path.join(__dirname, './')));
 app.listen(5000);
