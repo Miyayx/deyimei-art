@@ -1,0 +1,10 @@
+
+.carousel-caption {
+  position:static;
+}
+.carousel-indicators li.active{
+  background-color:#000000;
+}
+.carousel-indicators li {
+  background-color:#ccc;
+}

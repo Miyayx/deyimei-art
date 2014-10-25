@@ -59,8 +59,10 @@ app.get('/course', function(req, res) {
 	var template = fs.readFileSync('./course.jade');
 	var page = jade.compile(template, options);
 	var course = fs.readFileSync('./data/course.json');
+	var course_info = fs.readFileSync('./data/course-info.json');
 	res.send(page({
-		course: JSON.parse(course)
+		course: JSON.parse(course),
+		course_info: JSON.parse(course_info)
 	}));
 });
 

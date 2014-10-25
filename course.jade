@@ -1,11 +1,33 @@
 extends layout
 append head
   title 课程设置
+append style
+  mixin stylesheet('./css/course.css')
 block course-bar
   li.active: a(href='#') 课程设置
 append page
   .col-md-9.col-md-offset-1#course
-    .alert.alert-success &nbsp;&nbsp;&nbsp;&nbsp;我们真诚欢迎热爱表演艺术的朋友们来到群星，因为这里是群星闪烁的星空，这里是你施展才华的舞台，这里是你通往艺术殿堂的桥梁和纽带，在这里，你将成为星空中最为闪烁的一颗！
+    #myCarousel.carousel.slide.col-xs-12
+      ol.carousel-indicators
+        - for(var i = 0; i < course_info.length; i++){
+        -   if (i==0){
+        li.active(data-target='#myCarousel' data-slide-to='#{i}') 
+        -   }else{
+        li(data-target='#myCarousel' data-slide-to='#{i}') 
+        -    }
+        -}
+      .carousel-inner
+        - course_info.forEach(function(n, i){
+        - if(i==0){
+        .item.active
+          .carousel-caption 
+            .alert.alert-success #{n.detail}
+        - }else{
+        .item
+          .carousel-caption 
+            .alert.alert-success #{n.detail}
+        - }
+        - })
 
     - course.forEach(function(t, i){
       //type
