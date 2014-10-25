@@ -5,17 +5,19 @@ append head
 append style
   mixin stylesheet('./css/video.css')
 block video-bar
-  li.active: a(href='/member') 影像图片
+  li.active: a(href='#') 影像图片
 block page
   .col-md-9.col-md-offset-1#video
-    .alert.alert-warning &nbsp;&nbsp;&nbsp;&nbsp;学校积极开展各类合作办学活动，为学生将来的发展提供更大的拓展空间。1999年与国家级重点职业高中北京黄庄职业高中联合创办了国有民办的艺术类职高专业，为学生将来通往
+    .alert.alert-warning &nbsp;&nbsp;&nbsp;&nbsp;
 
-    #wall.row-fluid.isotope
-      - video.forEach(function(n, i){
-      .col-md-4.item.isotope-item
-        .picture
-          a.image
-            img(src='#{n.src}' title='#{n.caption}')
-          .description
-            p #{n.detail}
-      - })
+    //#wall.row-fluid.isotope
+    //  - video.forEach(function(n, i){
+    //  .col-md-4.item.isotope-item
+    //    .picture
+    //      a.image
+    //        img(src='#{n.src}' title='#{n.caption}')
+    //      .description
+    //        p #{n.detail}
+    //  - })
+    #wall.row-fluid
+      img.col-xs-12(src='../img/news/picture-wall.jpg')
