@@ -1,11 +1,57 @@
 [
 {
-    "type":"美术",
+    "type":"文艺类",
     "logo":"../img/logo/art.png",
-    "course":[]
+    "course":[
+    {
+        "src":"../img/course/shaoerwudao.jpg",
+        "name":"少儿舞蹈",
+        "info":"课程介绍-少儿舞蹈"
+    },
+    {
+        "src":"../img/course/ladingwu.jpg",
+        "name":"拉丁舞",
+        "info":"课程介绍-拉丁舞"
+    },
+    {
+        "src":"../img/course/zhongguowu.jpg",
+        "name":"中国舞",
+        "info":"课程介绍-中国舞"
+    },
+    {
+        "src":"../img/course/taiquandao.jpg",
+        "name":"跆拳道",
+        "info":"课程介绍-跆拳道"
+    },
+    {
+        "src":"../img/course/ertonghua.jpg",
+        "name":"儿童画",
+        "info":"课程介绍-儿童画"
+    },
+    {
+        "src":"../img/course/meishu.jpg",
+        "name":"美术",
+        "info":"课程介绍-美术"
+    },
+    {
+        "src":"../img/course/shufa.jpg",
+        "name":"书法",
+        "info":"课程介绍-书法"
+    },
+    {
+        "src":"../img/course/xiaozhuchiren.jpg",
+        "name":"小主持人",
+        "info":"课程介绍-小主持人"
+    },
+    {
+        "src":"../img/course/langsong.jpg",
+        "name":"朗诵",
+        "info":"课程介绍-朗诵"
+    }
+        ]
 },
 {
-    "type":"乐器",
+    "type":"器乐类",
     "logo":"../img/logo/music.png",
     "course":[
     {
@@ -19,38 +65,69 @@
         "info":"课程介绍-古典吉他"
     },
     {
-        "src":"../img/course/pipa.png",
-        "name":"琵琶",
-        "info":"课程介绍-琵琶"
+        "src":"../img/course/minyaojita.jpg",
+        "name":"民谣吉他",
+        "info":"课程介绍-民谣吉他"
     },
     {
-        "src":"../img/course/sakesi.png",
-        "name":"萨克斯",
-        "info":"课程介绍-萨克斯"
+        "src":"../img/course/dianjita.jpg",
+        "name":"电吉他",
+        "info":"课程介绍-电吉他"
     },
     {
-        "src":"../img/course/xiaotiqin.png",
-        "name":"小提琴",
-        "info":"课程介绍-小提琴"
+        "src":"../img/course/guzheng.jpg",
+        "name":"古筝",
+        "info":"课程介绍-古筝"
     },
     {
-        "src":"../img/course/yangqin.png",
-        "name":"扬琴",
-        "info":"课程介绍-扬琴"
+        "src":"../img/course/jiazigu.jpg",
+        "name":"架子鼓",
+        "info":"课程介绍-架子鼓"
+    },
+    {
+        "src":"../img/course/gangqin.jpg",
+        "name":"钢琴",
+        "info":"课程介绍-钢琴"
+    },
+    {
+        "src":"../img/course/hulusi.jpg",
+        "name":"葫芦丝",
+        "info":"课程介绍-葫芦丝"
+    },
+    {
+        "src":"../img/course/dianziqin.jpg",
+        "name":"电子琴",
+        "info":"课程介绍-电子琴"
     }
     ]
 
 },
 {
-    "type":"舞蹈",  
-    "logo":"../img/logo/dance.png",
-    "course":[]
-},
-{
-    "type":"主持",
+    "type":"声乐类",
     "logo":"../img/logo/presenter.png",
-    "course":[]
+    "course":[
+    {
+        "src":"../img/course/tongsheng.jpg",
+        "name":"童声",
+        "info":"课程介绍-童声"
+    },
+    {
+        "src":"../img/course/meisheng.jpg",
+        "name":"美声",
+        "info":"课程介绍-美声"
+    },
+    {
+        "src":"../img/course/minzu.jpg",
+        "name":"民族",
+        "info":"课程介绍-民族"
+    },
+    {
+        "src":"../img/course/tongsu.jpg",
+        "name":"通俗",
+        "info":"课程介绍-通俗"
+    }
+        
+        ]
 }
-
 
 ]
