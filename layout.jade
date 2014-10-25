@@ -1,14 +1,17 @@
 extends bootstrap
 append head
 append style
-  mixin stylesheet('css/index.css')
   mixin stylesheet('./css/animate.min.css')
+  mixin stylesheet('./css/index.css')
 append script
   mixin javascript('js/runtime.min.js')
   mixin javascript('js/app.js')
   mixin javascript('./js/jquery.grumble.min.js')
 block content
   .container-fluid.container-background
+    block logo-bg
+      .logo-bg.text-center.animated.fadeInDown
+        img.center.img(src='./img/home/home-bg-red.jpg')
     .navbar.navbar-inverse.narbar-fixed-top
       .container
         .navbar-header
@@ -28,7 +31,6 @@ block content
             block video-bar
               li: a(href='/video') 影像图片
             li.divider-vertical
-    block logo-bg
 
     .container
         block page
@@ -38,7 +40,7 @@ block content
               .note#note
                 .row-fluid
                   img(src="./img/logo/04.png")
-                  h4.col-md-5 联系我们 
+                  h4.col-md-5 开始报名啦！！
                 #contact
                   table.table
                     tr.success
