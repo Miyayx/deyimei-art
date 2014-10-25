@@ -4,27 +4,26 @@ append head
 block member-bar
   li.active: a(href='/member') 专业师资
 block page
-  .col-md-9.col-md-offset-1#member
-    .alert.alert-info
-      &nbsp;&nbsp;&nbsp;&nbsp;学校积极开展各类合作办学活动，为学生将来的发展提供更大的拓展空间。1999年与国家级重点职业高中北京黄庄职业高中联合创办了国有民办的艺术类职高专业，为学生将来通往高等艺术教育开辟了一条新的路子；2002年，北京群星表演艺术学校与中国传媒大学携手联办“大学影视表演艺术专业”；2003年与首都师范大学联合举办了影视剧大专班；2005年与山东荷泽学院进行合作，创办本科、续本、大专、中专等不同层次影视剧表演、播音与主持人等专业。形成了北京群星表演艺术学校多层次、多方位，从高中、大学到成人教育的一体化办学格局，为学生的升学和进一步深造奠定了良好的基础。
+  .col-xs-9.col-xs-offset-1#member
+    .alert.alert-info &nbsp;&nbsp;&nbsp;&nbsp;学校积极开展各类合作办学活动，为学生将来的发展提供更大的拓展空间。1999年与国家级重点职业高中北京黄庄职业高中联合创办了国有民办的艺术类职高专业，为学生将来通往高等艺术教育开辟了一条新的路子；2002年，北京群星表演艺术学校与中国传媒大学携手联办“大学影视表演艺术专业”；2003年与首都师范大学联合举办了影视剧大专班；2005年与山东荷泽学院进行合作，创办本科、续本、大专、中专等不同层次影视剧表演、播音与主持人等专业。形成了北京群星表演艺术学校多层次、多方位，从高中、大学到成人教育的一体化办学格局，为学生的升学和进一步深造奠定了良好的基础。
 
     .box
       - member.forEach(function(m, i){
       - if(i%2==0){
       .row
-        .col-md-12.description
-          .col-md-3
-            img.pull-left(src='#{m.src}' alt)
-          .col-md-9
-            h4 #{m.name}
+        .col-xs-12.description
+          .col-xs-3.center
+            h4.text-center #{m.name}
+            img.col-xs-12.pull-left(src='#{m.src}' alt)
+          .col-xs-9
             p #{m.description}
       - }else{
       .row
-        .col-md-12.description
-          .col-md-9
-            h4 #{m.name}
+        .col-xs-12.description
+          .col-xs-9
             p #{m.description}
-          .col-md-3
-            img.pull-right(src='#{m.src}' alt)
+          .col-xs-3
+            h4.text-center #{m.name}
+            img.col-xs-12.pull-right(src='#{m.src}' alt)
       - }
       - })
