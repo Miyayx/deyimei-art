@@ -16,12 +16,40 @@ block page
             h4.text-center #{m.name}
             img.col-xs-12.pull-left(src='#{m.src}' alt)
           .col-xs-9
-            p #{m.description}
+            - if(m.school){
+            p.text-inverse #{m.school}
+            - }
+            - if(m.speciality){
+            - m.speciality.split(",").forEach(function(d, j){
+            p(style="margin-right:15px").label.label-success #{d}
+            - })
+            - }
+            div(style="margin-top:12px")
+              p.text-info 主要业绩
+              ul
+                - m.experience.split("\n").forEach(function(d, j){
+                li.text-info #{d}
+                - })
+            p.text-danger #{m.description}
       - }else{
       .row
         .col-xs-12.description
           .col-xs-9
-            p #{m.description}
+            - if(m.school){
+            p.text-inverse #{m.school}
+            - }
+            - if(m.speciality){
+            - m.speciality.split(",").forEach(function(d, j){
+            p(style="margin-right:15px").label.label-success #{d}
+            - })
+            - }
+            div(style="margin-top:12px")
+              p.text-info 主要业绩
+              ul
+                - m.experience.split("\n").forEach(function(d, j){
+                li.text-info #{d}
+                - })
+            p.text-danger #{m.description}
           .col-xs-3
             h4.text-center #{m.name}
             img.col-xs-12.pull-right(src='#{m.src}' alt)
