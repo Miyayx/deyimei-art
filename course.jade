@@ -16,18 +16,35 @@ append page
         li(data-target='#myCarousel' data-slide-to='#{i}') 
         -    }
         -}
-      .carousel-inner
+      .carousel-inner(role="listbox")
         - course_info.forEach(function(n, i){
         - if(i==0){
-        .item.active
-          .carousel-caption 
-            .alert.alert-success #{n.detail}
+        .item.active.col-xs-offset-1.col-xs-10
+          .alert.alert-success(style="min-height:330px") 
+            - n.detail.split("\n").forEach(function(d, j){
+            -   if (j == 0){
+            strong #{d}
+            -   }else{
+            p #{d} 
+            -   }
+            - })
         - }else{
-        .item
-          .carousel-caption 
-            .alert.alert-success #{n.detail}
+        .item.col-xs-offset-1.col-xs-10
+          .alert.alert-success(style="min-height:330px") 
+            - n.detail.split("\n").forEach(function(d, j){
+            -   if (j == 0){
+            strong #{d}
+            -   }else{
+            p #{d}
+            -   }
+            - })
         - }
         - })
+      a.left.carousel-control(href="#myCarousel",role="button",data-slide="prev")
+        span.glyphicon.glyphicon-chevron-left(style="color:green")
+      a.right.carousel-control(href="#myCarousel",role="button",data-slide="next")
+        span.glyphicon.glyphicon-chevron-right(style="color:green")
+
 
     - course.forEach(function(t, i){
       //type
