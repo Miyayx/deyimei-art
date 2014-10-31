@@ -1,0 +1,23 @@
+
+extends layout
+append head
+  title 学校动态
+append style
+  mixin stylesheet('./css/video.css')
+block matter-bar
+  li.active: a(href='#') 学校动态
+block page
+  .col-md-9.col-md-offset-1#matter
+
+    //#wall.row-fluid.isotope
+    //  - video.forEach(function(n, i){
+    //  .col-md-4.item.isotope-item
+    //    .picture
+    //      a.image
+    //        img(src='#{n.src}' title='#{n.caption}')
+    //      .description
+    //        p #{n.detail}
+    //  - })
+    #wall.row-fluid
+      a(href='../img/news/picture-wall.jpg')
+        img.col-xs-12(src='../img/news/picture-wall.jpg')

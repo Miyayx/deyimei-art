@@ -87,6 +87,21 @@ app.get('/video', function(req, res) {
 	}));
 });
 
+app.get('/matter', function(req, res) {
+	var options = null;
+	options || (options = {});
+	options.client != null || (options.client = true);
+	options.compileDebug != null || (options.compileDebug = false);
+	options.filename || (options.filename = 'matter.jade');
+
+	var template = fs.readFileSync('./matter.jade');
+	var page = jade.compile(template, options);
+	var matter = fs.readFileSync('./data/video.json');
+	res.send(page({
+		matter: JSON.parse(matter)
+	}));
+});
+
 app.use(express.static(path.join(__dirname, './')));
 app.listen(5000);
 
