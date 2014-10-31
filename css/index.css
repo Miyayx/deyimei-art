@@ -52,11 +52,12 @@ body{
 
 }
 
-#home-info img{
+#home-info img.img-circle{
   margin-right:5px;
   margin-top:10px;
   max-height:80px;
   max-width:80px;
+  margin-bottom:10px;
 }
 
 #home-info p{
