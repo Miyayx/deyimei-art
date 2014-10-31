@@ -23,3 +23,8 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
+#course img.img-circle{
+    max-height:80px;
+    max-width:80px;
+    margin-bottom:10px;
+}
