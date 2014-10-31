@@ -55,6 +55,8 @@ body{
 #home-info img{
   margin-right:5px;
   margin-top:10px;
+  max-height:80px;
+  max-width:80px;
 }
 
 #home-info p{
