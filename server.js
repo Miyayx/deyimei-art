@@ -3,11 +3,13 @@ var express = require('./node_modules/express');
 var app = express();
 var fs = require('fs');
 var path = require('path');
+var moment = require('moment');
 var count = 0
 
 app.get('/', function(req, res) {
     count++;
-    console.log(count);
+    var t = moment().format("YYYY-MM-DD HH:mm:ss");
+    console.log(t+count);
 	var options = null;
 	options || (options = {});
 	options.client != null || (options.client = true);
