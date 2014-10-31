@@ -16,7 +16,8 @@ body{
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color:#FFFFFF;
-  background-color:#CC0033;
+  //background-color:#CC0033;
+  background-color:rgba(204,0,51,0.4);
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
 
@@ -25,9 +26,9 @@ body{
 }
 .navbar-inverse .navbar-nav > li > a{
   color:#FF0000;
-  text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
-  -moz-text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
-  -webkit-text-shadow: -1px 0 pink, 0 1px pink, 1px 0 pink, 0 -1px pink;
+  text-shadow: 0px 0 #FFC0CB, 0 1px #FFC0CB, 1px 0 #FFC0CB, 0 0px #FFC0CB;
+  -moz-text-shadow: 0px 0 #FFC0CB, 0 1px #FFC0CB, 1px 0 #FFC0CB, 0 0px #FFC0CB;
+  -webkit-text-shadow: 0px 0 #FFC0CB, 0 1px #FFC0CB, 1px 0 #FFC0CB, 0 0px #FFC0CB;
 }
 .navbar-nav li a{
   font-size:18px;
