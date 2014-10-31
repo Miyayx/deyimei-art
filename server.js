@@ -3,8 +3,11 @@ var express = require('./node_modules/express');
 var app = express();
 var fs = require('fs');
 var path = require('path');
+var count = 0
 
 app.get('/', function(req, res) {
+    count++;
+    console.log(count);
 	var options = null;
 	options || (options = {});
 	options.client != null || (options.client = true);
@@ -20,6 +23,8 @@ app.get('/', function(req, res) {
 });
 
 app.get('/home', function(req, res) {
+    count++;
+    console.log(count);
 	var options = null;
 	options || (options = {});
 	options.client != null || (options.client = true);
