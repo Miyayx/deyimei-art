@@ -8,10 +8,9 @@ append script
   mixin javascript('js/app.js')
   mixin javascript('./js/jquery.grumble.min.js')
 block content
-  //.container-fluid.container-background
   block logo-bg
     .logo-bg.text-center.animated.fadeInDown
-      img.center.img(src='./img/home/home-bg-red.jpg')
+      img.col-xs-12.center.img(src='./img/home/home-bg-red.jpg')
   .navbar.navbar-inverse.narbar-fixed-top(role="navigation")
    .container
      .navbar-header
@@ -23,52 +22,51 @@ block content
        //a.brand(href='/home') 德艺美
      .navbar-collapse.collapse#global-nav
        ul.nav.navbar-nav
-         //li.divider-vertical
+         li.divider-vertical
          block home-bar
            li: a(href='/home') 走进德艺美
-         //li.divider-vertical
+         li.divider-vertical
          block matter-bar
            li: a(href='/matter') 学校动态
-         //li.divider-vertical
+         li.divider-vertical
          block member-bar
            li: a(href='/member') 专业师资
-         //li.divider-vertical
+         li.divider-vertical
          block course-bar
            li: a(href='/course') 课程设置
-         //li.divider-vertical
+         li.divider-vertical
          block video-bar
            li: a(href='/video') 影像图片
-         //li.divider-vertical
+         li.divider-vertical
 
-    section
-        block page
-        .col-md-offset-10
-          .pin-wrapper
-            .pinned.note-container
-              .note#note
-                .row
-                  img(src="./img/logo/04.png",style="max-height:60px;max-width:60px")
-                  .col-xs-7(style="margin-left:20px")
-                    h4(style="font-size:20px").text-success 报名啦！！
-                #contact
-                  ul
-                    li 咨询电话
-                      p 24975168&nbsp;&nbsp;24968951
-                    li Q Q
-                      p 3126303548
-                      //a(href="http://sighttp.qq.com/cgi-bin/check?sigkey=b059be8b5aac7cab273e30467a7749c012fd585eb7a68808fbdf316036b42555fded884b17b706533090a2c68f6b6dd7", target=_blank, onclick="var tempSrc='http://sighttp.qq.com/wpa.js?rantime='+Math.random()+'&sigkey=b059be8b5aac7cab273e30467a7749c012fd585eb7a68808fbdf316036b42555fded884b17b706533090a2c68f6b6dd7';var oldscript=document.getElementById('testJs');var newscript=document.createElement('script');newscript.setAttribute('type','text/javascript'); newscript.setAttribute('id', 'testJs');newscript.setAttribute('src',tempSrc);if(oldscript == null){document.body.appendChild(newscript);}else{oldscript.parentNode.replaceChild(newscript, oldscript);}return false;")
-                        img(border="0",SRC='http://wpa.qq.com/pa?p=1:3126303548:1',alt="有事Q我！")
-                    li E-Mail
-                      p 3126303548@qq.com
-                    li 地址
-                      p 天津市东丽区跃进北路华亭里1号
+    section(style="margin-top:30px")
+     block page
+     .col-xs-offset-8.col-md-offset-10
+       .pin-wrapper
+         .pinned.note-container
+           .note#note
+             .row
+               img(src="./img/logo/04.png",style="max-height:60px;max-width:60px")
+               .col-xs-7(style="margin-left:20px")
+                 h4(style="font-size:20px").text-success 报名啦！！
+             #contact
+               ul
+                 li 咨询电话
+                   p 24975168&nbsp;&nbsp;24968951
+                 li Q Q
+                   p 3126303548
+                   //a(href="http://sighttp.qq.com/cgi-bin/check?sigkey=b059be8b5aac7cab273e30467a7749c012fd585eb7a68808fbdf316036b42555fded884b17b706533090a2c68f6b6dd7", target=_blank, onclick="var tempSrc='http://sighttp.qq.com/wpa.js?rantime='+Math.random()+'&sigkey=b059be8b5aac7cab273e30467a7749c012fd585eb7a68808fbdf316036b42555fded884b17b706533090a2c68f6b6dd7';var oldscript=document.getElementById('testJs');var newscript=document.createElement('script');newscript.setAttribute('type','text/javascript'); newscript.setAttribute('id', 'testJs');newscript.setAttribute('src',tempSrc);if(oldscript == null){document.body.appendChild(newscript);}else{oldscript.parentNode.replaceChild(newscript, oldscript);}return false;")
+                     img(border="0",SRC='http://wpa.qq.com/pa?p=1:3126303548:1',alt="有事Q我！")
+                 li E-Mail
+                   p 3126303548@qq.com
+                 li 地址
+                   p 天津市东丽区跃进北路华亭里1号
 
     block footer
       footer.text-center
         hr.featurette-divider
         //audio(src="./music/二胡独奏-睡莲(纯音乐).mp3",autoplay="autoplay",controls)
           p If you are reading this, it is because your browser does not support the audio element.
-        .col-xs-8(style="margin-top:30px")
+        .col-xs-10(style="margin-top:30px")
           p.pull-right: a(href="#") 返回顶部
-          h4
-            p.text-danger Copyright&nbsp;©2014&nbsp;&nbsp;华艺仁琦文化传媒有限公司  
+          h4: p.text-danger Copyright&nbsp;©2014&nbsp;&nbsp;华艺仁琦文化传媒有限公司  
