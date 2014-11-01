@@ -8,8 +8,8 @@ var count = 0
 
 app.get('/', function(req, res) {
     count++;
-    var t = moment().format("YYYY-MM-DD HH:mm:ss");
-    console.log(t+count);
+    var t = moment().zone(-14).format("YYYY-MM-DD HH:mm:ss");
+    console.log(t+" count="+count);
 	var options = null;
 	options || (options = {});
 	options.client != null || (options.client = true);
@@ -26,8 +26,8 @@ app.get('/', function(req, res) {
 
 app.get('/home', function(req, res) {
     count++;
-    var t = moment().format("YYYY-MM-DD HH:mm:ss");
-    console.log(t+count);
+    var t = moment().zone(-14).format("YYYY-MM-DD HH:mm:ss");
+    console.log(t+" count="+count);
 	var options = null;
 	options || (options = {});
 	options.client != null || (options.client = true);
