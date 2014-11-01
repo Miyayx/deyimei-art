@@ -26,7 +26,8 @@ app.get('/', function(req, res) {
 
 app.get('/home', function(req, res) {
     count++;
-    console.log(count);
+    var t = moment().format("YYYY-MM-DD HH:mm:ss");
+    console.log(t+count);
 	var options = null;
 	options || (options = {});
 	options.client != null || (options.client = true);

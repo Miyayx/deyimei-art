@@ -33,6 +33,13 @@ body{
   font-size:18px;
 }
 
+.navbar-inverse .navbar-toggle,.navbar-inverse .navbar-toggle:focus{
+  background-color:#CC0033;
+}
+.navbar-inverse .navbar-toggle:hover{
+  background-color:rgba(204,0,51,0.6);
+}
+
 .container{
   //background-image: url(../img/background/notes_background_9.png); 
   background-size: auto; 

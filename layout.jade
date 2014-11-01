@@ -8,32 +8,37 @@ append script
   mixin javascript('js/app.js')
   mixin javascript('./js/jquery.grumble.min.js')
 block content
-  .container-fluid.container-background
-    block logo-bg
-      .logo-bg.text-center.animated.fadeInDown
-        img.center.img(src='./img/home/home-bg-red.jpg')
-    .navbar.navbar-inverse.narbar-fixed-top
-      .container
-        .navbar-header
-          //a.brand(href='/home') 德艺美
-        .collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.divider-vertical
-            block home-bar
-              li: a(href='/home') 走进德艺美
-            li.divider-vertical
-            block matter-bar
-              li: a(href='/matter') 学校动态
-            li.divider-vertical
-            block member-bar
-              li: a(href='/member') 专业师资
-            li.divider-vertical
-            block course-bar
-              li: a(href='/course') 课程设置
-            li.divider-vertical
-            block video-bar
-              li: a(href='/video') 影像图片
-            li.divider-vertical
+  //.container-fluid.container-background
+  block logo-bg
+    .logo-bg.text-center.animated.fadeInDown
+      img.center.img(src='./img/home/home-bg-red.jpg')
+  .navbar.navbar-inverse.narbar-fixed-top(role="navigation")
+   .container
+     .navbar-header
+       button.navbar-toggle.collapsed(type="button",data-toggle="collapse",data-target="#global-nav")
+         span.sr-only Toggle navigation
+         span.icon-bar
+         span.icon-bar
+         span.icon-bar
+       //a.brand(href='/home') 德艺美
+     .navbar-collapse.collapse#global-nav
+       ul.nav.navbar-nav
+         //li.divider-vertical
+         block home-bar
+           li: a(href='/home') 走进德艺美
+         //li.divider-vertical
+         block matter-bar
+           li: a(href='/matter') 学校动态
+         //li.divider-vertical
+         block member-bar
+           li: a(href='/member') 专业师资
+         //li.divider-vertical
+         block course-bar
+           li: a(href='/course') 课程设置
+         //li.divider-vertical
+         block video-bar
+           li: a(href='/video') 影像图片
+         //li.divider-vertical
 
     section
         block page
@@ -64,7 +69,6 @@ block content
         //audio(src="./music/二胡独奏-睡莲(纯音乐).mp3",autoplay="autoplay",controls)
           p If you are reading this, it is because your browser does not support the audio element.
         .col-xs-8(style="margin-top:30px")
-          p.pull-right
-            a(href="#") 返回顶部
+          p.pull-right: a(href="#") 返回顶部
           h4
             p.text-danger Copyright&nbsp;©2014&nbsp;&nbsp;华艺仁琦文化传媒有限公司  
