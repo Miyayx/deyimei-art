@@ -1,0 +1,549 @@
+#componentWrapper {
+    position: relative;
+    margin-left: 15%;
+    height: 360px;
+    width: 700px;
+}
+
+#componentWrapper .mediaWrapper {
+    background: none repeat scroll 0 0 #111111;
+    height: 360px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 700px;
+}
+
+#componentWrapper .mediaPreview {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    display: none;
+}
+
+#componentWrapper .playerControls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: url(../data/bg.png);
+    z-index: 1000;
+}
+
+#componentWrapper .playerControls .player_control {
+    position: relative;
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-image: url(../data/icons/controls.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#componentWrapper .playerControls .player_control .player_control_tooltip {
+    position: absolute;
+    color: white;
+    top: -20px;
+    left: -5px;
+    display: none;
+    padding: 2px;
+    font-size: 9px;
+    font-family: arial;
+    background: #333;
+    border-radius: 2px;
+    border: 1px solid #666;
+    white-space: nowrap;
+}
+
+#componentWrapper .playerControls .player_control:hover .player_control_tooltip {
+    display: block;
+}
+
+#componentWrapper .playerControls .seekbar {
+    position: relative;
+}
+
+#componentWrapper .playerControls .seekbar .seekbar_bg {
+    position: relative;
+    background: #444;
+}
+
+#componentWrapper .playerControls .seekbar .seekbar_bg .level {
+    position: absolute;
+    background: #0ebeea;
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -o-transition: background 0.3s;
+}
+
+#componentWrapper .playerControls .seekbar .seekbar_bg:hover .level {
+    background: white;
+}
+
+#componentWrapper .playerControls .player_play {
+    float: left;
+    background-position: 0px -120px;
+}
+
+#componentWrapper .playerControls .player_play:hover {
+    background-position: 0px -90px;
+}
+
+#componentWrapper .playerControls .player_play.player_pause {
+    left: 0;
+    background-position: -30px -120px;
+}
+
+#componentWrapper .playerControls .player_play.player_pause:hover {
+    background-position: -30px -90px;
+}
+
+#componentWrapper .playerControls .player_play .player_control_tooltip {
+    left: 4px;
+}
+
+#componentWrapper .playerControls .player_seekbar {
+    float: left;
+    height: 30px;
+    width: 389px;
+    padding: 0 8px;
+}
+
+#componentWrapper .playerControls .player_seekbar .seekbar_bg {
+    height: 5px;
+    width: 100%;
+    top: 12px;
+    cursor: pointer;
+}
+
+#componentWrapper .playerControls .player_seekbar .seekbar_bg .load_level {
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background: #525252;
+}
+
+#componentWrapper .playerControls .player_seekbar .seekbar_bg .level {
+    width: 30%;
+    top: 0;
+    height: 5px;
+}
+
+#componentWrapper .playerControls .player_repeat {
+    background-position: -270px -120px;
+}
+
+#componentWrapper .playerControls .player_repeat:hover {
+    background-position: -270px -90px;
+}
+
+#componentWrapper .playerControls .player_mediaTime {
+    float: right;
+    width: 85px;
+    text-align: center;
+    color: #e5e5e5;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+#componentWrapper .playerControls .player_volume {
+    height: 109px;
+    position: relative;
+    top: -79px;
+    background: none;
+}
+
+#componentWrapper .playerControls .player_volume .player_volume_icon {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 79px;
+    right: 0px;
+    background: url(../data/icons/controls.png) -60px -120px;
+}
+
+#componentWrapper .playerControls .player_volume .player_volume_icon:hover {
+    background-position: -60px -90px;
+}
+
+#componentWrapper .playerControls .player_volume:hover {
+    background-position: -60px -90px;
+}
+
+#componentWrapper .playerControls .player_volume:hover .seekbar {
+    top: 0;
+}
+
+#componentWrapper .playerControls .player_volume .seekbar {
+    top: 79px;
+    left: 1px;
+    height: 79px;
+    width: 29px;
+    background: #252525;
+    position: absolute;
+    transition: top 0.3s;
+    -moz-transition: top 0.3s;
+    -webkit-transition: top 0.3s;
+    -o-transition: top 0.3s;
+}
+
+#componentWrapper .playerControls .player_volume .seekbar .seekbar_bg {
+    width: 7px;
+    height: 64px;
+    top: 9px;
+    left: 11px;
+}
+
+#componentWrapper .playerControls .player_volume .seekbar .seekbar_bg .level {
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+}
+
+#componentWrapper .playerControls .player_volume .seekbar:hover+.player_volume_icon {
+    background-position: -60px -90px;
+}
+
+#componentWrapper .playerControls .player_resolution a {
+    display: block;
+    position: absolute;
+}
+
+#componentWrapper .playerControls .player_resolution .resolution_hd {
+    background-position: -120px -120px;
+}
+
+#componentWrapper .playerControls .player_resolution .resolution_hd:hover {
+    background-position: -120px -90px;
+}
+
+#componentWrapper .playerControls .player_resolution .resolution_sd {
+    background-position: -90px -120px;
+}
+
+#componentWrapper .playerControls .player_resolution .resolution_sd:hover {
+    background-position: -90px -90px;
+}
+
+#componentWrapper .playerControls .player_resolution .player_control_tooltip {
+    display: none!important;
+}
+
+#componentWrapper .playerControls .player_resolution .active {
+    display: block;
+}
+
+#componentWrapper .playerControls .player_resolution .inactive {
+    display: none;
+}
+
+#componentWrapper .playerControls .player_resolution:hover .inactive.enabled {
+    display: block;
+    top: -30px;
+}
+
+#componentWrapper .playerControls .player_resolution:hover .inactive.enabled:hover .player_control_tooltip {
+    display: block!important;
+}
+
+#componentWrapper .playerControls .player_info {
+    background-position: -150px -120px;
+}
+
+#componentWrapper .playerControls .player_info:hover {
+    background-position: -150px -90px;
+}
+
+#componentWrapper .playerControls .player_playlist {
+    background-position: -240px -120px;
+}
+
+#componentWrapper .playerControls .player_playlist:hover {
+    background-position: -240px -90px;
+}
+
+#componentWrapper .playerControls .player_fullscreen {
+    background-position: -210px -120px;
+}
+
+#componentWrapper .playerControls .player_fullscreen:hover {
+    background-position: -210px -90px;
+}
+
+#componentWrapper .playerControls .player_fullscreen.in_fullscreen {
+    right: 0px;
+    background-position: -180px -120px;
+}
+
+#componentWrapper .playerControls .player_fullscreen.in_fullscreen:hover {
+    background-position: -180px -90px;
+}
+
+#componentWrapper .playerControls .player_fullscreen .player_control_tooltip {
+    left: -20px;
+}
+
+#componentWrapper .big_play {
+    display: none;
+    cursor: pointer;
+    display: block;
+    height: 91px;
+    left: 50%;
+    margin-left: -45px;
+    margin-top: -45px;
+    position: absolute;
+    top: 50%;
+    width: 91px;
+    z-index: 10;
+    background: url(../img/icons/big_play.png) no-repeat;
+}
+
+#componentWrapper .big_play:hover {
+    background: url(../img/icons/big_play.png) 0 100% no-repeat;
+}
+
+#componentWrapper .infoHolder {
+    background: none repeat scroll 0 0 #111111;
+    color: #757575;
+    display: none;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    left: 0;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    width: 560px;
+}
+
+#componentWrapper .infoHolder a {
+    color: #01B9C9;
+    text-decoration: underline;
+}
+
+#componentWrapper .infoHolder a:hover {
+    text-decoration: none;
+}
+
+.infoTitle {
+    color: #2298BC;
+    font-size: 14px;
+}
+
+#componentWrapper .playlistHolder {
+}
+
+#componentWrapper .playlistHolder .playlistNonSelected:hover {
+    background: #2c2c2c;
+}
+
+#componentWrapper .playlistHolder .playlistSelected .playlistTitle,#componentWrapper .playlistHolder .playlistSelected .playlistContent,#componentWrapper .playlistHolder .playlistNonSelected:hover .playlistTitle,#componentWrapper .playlistHolder .playlistNonSelected:hover .playlistContent {
+    color: #e5e5e5;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical {
+    position: absolute;
+    top: 48px;
+    right: -276px;
+    width: 276px;
+    height: 255px;
+    background: #0C0C0C;
+    overflow: hidden;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .componentPlaylist {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 268px;
+    height: 246px;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .playlist_inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .playlistThumb {
+    float: left;
+    width: 32px;
+    height: 32px;
+    background: red;
+    border: 1px solid #444;
+    margin-right: 4px;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .playlistThumb .thumb {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .playlistTitle {
+    margin: 4px 0 0;
+    font-family: arial,sans-serif;
+    font-size: 9px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .playlistContent {
+    font-family: arial,sans-serif;
+    font-size: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .count {
+    display: block;
+    width: 12px;
+    text-align: right;
+    float: left;
+    padding: 10px 6px 0;
+    font-size: 9px;
+    font-family: arial;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .componentPlaylist .playlistNonSelected {
+    position: relative;
+    display: inline;
+    top: 0px;
+    left: 0px;
+    width: 260px;
+    height: 32px;
+    float: left;
+    background: #1b1b1b;
+    margin: 1px 1px 0;
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding: 4px 0 4px 0;
+    color: #a1a1a1;
+}
+
+#componentWrapper .playlistHolder.playlist_vertical .componentPlaylist .playlistSelected {
+    position: relative;
+    display: inline;
+    top: 0px;
+    left: 0px;
+    width: 260px;
+    height: 32px;
+    float: left;
+    background: #2c2c2c;
+    margin: 1px 1px 0;
+    list-style-type: decimal;
+    padding: 4px 0 4px 0;
+    color: #e5e5e5;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal {
+    position: relative;
+    z-index: 100;
+    padding: 0 2px;
+    background: #1b1b1b;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist {
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistNonSelected {
+    position: relative;
+    width: 80px;
+    height: 100px;
+    float: left;
+    background: #1b1b1b;
+    margin: 0px 0px 0;
+    padding: 4px;
+    color: #a1a1a1;
+    list-style: none;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistSelected {
+    position: relative;
+    width: 80px;
+    height: 100px;
+    float: left;
+    background: #2c2c2c;
+    margin: 0px 0px 0;
+    padding: 4px;
+    color: #e5e5e5;
+    list-style: none;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistThumb {
+    overflow: hidden;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #444;
+    margin: 0 auto;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistThumb .thumb {
+    display: block;
+    width: 64px;
+    height: 64px;
+    transition: opacity 0.4s;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistSelected:hover .thumb .thumb,#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistNonSelected .thumb {
+    opacity: 0.4;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistSelected:hover .thumb:hover .thumb,#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistNonSelected:hover .thumb {
+    opacity: 1;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistTitle {
+    height: 22px;
+    overflow: hidden;
+    margin: 2px 0 0;
+    text-align: center;
+    font-family: arial,sans-serif;
+    font-size: 9px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .playlistContent {
+    display: none;
+    font-family: arial,sans-serif;
+    font-size: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#componentWrapper .playlistHolder.playlist_horizontal .componentPlaylist .count {
+    display: block;
+    display: none;
+    width: 12px;
+    text-align: right;
+    float: left;
+    padding: 10px 6px 0;
+    font-size: 9px;
+    font-family: arial;
+}
+
+#componentWrapper .jspContainer .jspDrag {
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -o-transition: background 0.3s;
+}
+
+#componentWrapper .jspContainer:hover .jspDrag {
+    background: white;
+}
+
+#componentWrapper #playlist1,#componentWrapper #playlist2 {
+    display: none;
+}

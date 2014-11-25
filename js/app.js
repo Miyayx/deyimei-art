@@ -16,7 +16,7 @@ $(document).ready(function() {
 	//});
     
 
-	$('#openvideo-btn').on('click', function(event) {
+	$('#openvideo-btn, .big_play').on('click', function(event) {
 		event.preventDefault();
 		blueimp.Gallery([{
 			title: '天津德艺美总校开学演出',

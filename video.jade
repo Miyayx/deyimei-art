@@ -3,6 +3,7 @@ extends layout
 append head
   title 影像图片
 append style
+  mixin stylesheet('./css/video2.css')
   mixin stylesheet('./css/video.css')
   mixin stylesheet('http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css')
   mixin stylesheet('./css/bootstrap-image-gallery.min.css')
@@ -13,7 +14,6 @@ block video-bar
   li.active: a(href='#') 影像图片
 block page
   .col-md-9.col-md-offset-1#video
-    //.alert.alert-warning &nbsp;&nbsp;&nbsp;&nbsp;
 
     //#wall.row-fluid.isotope
     //  - video.forEach(function(n, i){
@@ -24,9 +24,17 @@ block page
     //      .description
     //        p #{n.detail}
     //  - })
+
     #wall.row-fluid
-      button#openvideo-btn
-        img(src='../img/news/play.png')
+
+      .col-md-offset-1#componentWrapper
+        h3 天津德艺美总校开学典礼
+        .mediaWrapper
+          .mediaPreview(style="width:700px; height:380px; display:block;")
+            img.col-xs-12(src="./img/news/open-video.jpg")
+          .big_play(style="display:block;")
+      br
+      br
 
       #blueimp-gallery.blueimp-gallery
         .slides
@@ -50,5 +58,6 @@ block page
                   i.glyphicon.glyphicon-chevron-right
 
 
-      a(href='../img/news/picture-wall.jpg')
-        img.col-xs-12(src='../img/news/picture-wall.jpg')
+      div
+        a(href='../img/news/picture-wall.jpg')
+          img.col-xs-12(src='../img/news/picture-wall.jpg')
