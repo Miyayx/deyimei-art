@@ -4,6 +4,11 @@ append head
   title 影像图片
 append style
   mixin stylesheet('./css/video.css')
+  mixin stylesheet('http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css')
+  mixin stylesheet('./css/bootstrap-image-gallery.min.css')
+append script
+  mixin javascript("http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js")
+  mixin javascript('js/bootstrap-image-gallery.min.js')
 block video-bar
   li.active: a(href='#') 影像图片
 block page
@@ -20,5 +25,30 @@ block page
     //        p #{n.detail}
     //  - })
     #wall.row-fluid
+      button#openvideo-btn
+        img(src='../img/news/play.png')
+
+      #blueimp-gallery.blueimp-gallery
+        .slides
+        h3.title 
+        a.prev <
+        a.next >
+        a.close x
+        a.play-pause
+        ol.indicator
+        .modal.fade
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type="button",aria-hidden="true") &times;
+                h4.modal-title
+              .modal-body.next
+              .modal-footer
+                button.btn.btn-default.pull-left.prev(type="button") 
+                  i.glyphicon.glyphicon-chevron-left 上一个
+                button.btn.btn-primary.next 下一个
+                  i.glyphicon.glyphicon-chevron-right
+
+
       a(href='../img/news/picture-wall.jpg')
         img.col-xs-12(src='../img/news/picture-wall.jpg')
