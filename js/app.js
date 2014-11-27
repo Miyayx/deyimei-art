@@ -5,8 +5,7 @@ $(document).ready(function() {
 		$(this).addClass('active').css('font-weight', 'bold');
 	});
 
-	$('#course item').on('click', function() {
-	});
+	$('#course item').on('click', function() {});
 
 	//$('#note').mouseenter(function() {
 	//	$('#note #contact').removeClass("hidden");
@@ -14,7 +13,6 @@ $(document).ready(function() {
 	//}).mouseleave(function() {
 	//	$('#note #contact ').hide("slow",function(){});
 	//});
-    
 
 	$('#openvideo-btn, .big_play').on('click', function(event) {
 		event.preventDefault();
@@ -24,6 +22,17 @@ $(document).ready(function() {
 			type: 'video/mp4',
 			poster: '../img/news/open-video.jpg'
 		}], $('#blueimp-gallery').data());
+	});
+
+
+	$('#demo1').videoUI({
+		'autoHide': true,
+		'volumeMedia': 3,
+		'playMedia': true,
+		'progressMedia': true,
+		'timerMedia': true,
+		'fullscreenMedia': true
+
 	});
 
 });

@@ -3,60 +3,52 @@ append head
   title 德艺美艺术教育培训中心
 append style
   mixin stylesheet('http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css')
-  mixin stylesheet('./css/bootstrap-image-gallery.min.css')
+  mixin stylesheet('./css/bootstrap2.min.css')
+  mixin stylesheet('./css/video-default.css')
 append script
   mixin javascript("http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js")
-  mixin javascript('js/bootstrap-image-gallery.min.js')
+  //mixin javascript('js/bootstrap-image-gallery.min.js')
+  mixin javascript('js/jquery.video-ui.js')
 //append logo-bg
 block home-bar
   li.active: a(href='/home') 走进德艺美
 append page
-  .col-xs-9.col-xs-offset-1#home
+  .col-md-9.col-md-offset-1#home
 
-   br
    #home-info
-     .col-xs-12.animated.bounceInLeft
+     .col-md-12.animated.bounceInLeft
        .row
-         img.col-xs-1.img-circle(src="./img/logo/logo-01.png")
+         img.col-md-1.img-circle(src="./img/logo/logo-01.png")
          h3(style="color:#CC0033") 德艺美开业啦！
        .row
-         img.col-xs-4(src="./img/home/kaiye.png")
-         .col-xs-8
-           p(style="color:#CC0033;font-size:20px") &nbsp;&nbsp;&nbsp;&nbsp;为庆祝本中心盛大开业；于2014年11月1日下午3；30分—6；30分在东丽广场举办一场盛大的开业庆典演出活动，届时有著名相声表演艺术家侯耀华，2013年《星光大道》年度四强陈曦，相声大赛一等奖获得者郭金杰，《梦想剧场》年度总冠军田震模仿秀吕雪，2013《星光大道》月冠军袁忠山，影视歌全能音乐人高歌，《中国好声音》乐队吉他手金天，本校校长民族器乐演奏家崔山，中国音乐学院考级评委，青年古筝演奏家李蕊及他们的弟子（在全国比赛中获奖的优秀学员）曾参加央视2012年春节晚会开场舞蹈的学员们；现场为大家表演庆祝；另有中国文艺界泰斗；严肃，相声表演艺术家；陈寒柏；中国好声音2013年年度冠军李琦等名人名家发来的视频祝福期待您光临观看。
-             button#openvideo-btn(type="button").btn.btn-danger: b 点击观看视频 
-         p(style="color:#CC0033;font-size:20px") &nbsp;&nbsp;&nbsp;&nbsp;本中心盛大开业之际优惠多多；礼品多多；2014年11月1日—12月31日凡是来本中心报名的学员均享受课时费八折优惠，赠送课时并有礼品赠送。
-         p(style="color:#CC0033;font-size:20px") &nbsp;&nbsp;&nbsp;&nbsp;2014年11月1日—2015年4月30日持本宣传单报名的学员均享受赠送课时的优惠并有礼品赠送。
+         .col-md-5(style="text-align:center")
+           p 天津德艺美总校开学演出
+           .videoUiWrapper.thumbnail(style="text-align:center")
+             video#demo1(width="380" height="280" poster="./img/news/open-video.jpg" style="margin:0 auto; padding:0")
+               source(src="http://deyimei-art.qiniudn.com/video/天津德艺美总校开学演出-small.mp4" type="video/mp4")
 
-     .col-xs-12.animated.bounceInRight
-       .row
-         img.col-xs-1.img-circle(src="./img/logo/logo-02.png")
+         //.col-md-6
+         //  video#open-video.video-js.vjs-default-skin(controls preload="auto" width="400" height="340" poster="./img/news/open-video.jpg" data-setup="{}")
+         //    source(src="http://deyimei-art.qiniudn.com/video/天津德艺美总校开学演出-small.mp4" type="video/mp4")
+         //    p.vjs-no-js To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+
+
+         .col-md-7
+           p(style="color:#CC0033;font-size:18px") &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为庆祝本中心盛大开业:于2014年11月1日下午3:30分—6:30分在东丽广场举办一场盛大的开业庆典演出活动，届时有著名相声表演艺术家侯耀华，2013年《星光大道》年度四强陈曦，相声大赛一等奖获得者郭金杰，《梦想剧场》年度总冠军田震模仿秀吕雪，2013《星光大道》月冠军袁忠山，影视歌全能音乐人高歌，《中国好声音》乐队吉他手金天，本校校长民族器乐演奏家崔山，中国音乐学院考级评委，青年古筝演奏家李蕊及他们的弟子（在全国比赛中获奖的优秀学员）曾参加央视2012年春节晚会开场舞蹈的学员们；现场为大家表演庆祝；另有中国文艺界泰斗；严肃，相声表演艺术家；陈寒柏；中国好声音2013年年度冠军李琦等名人名家发来的视频祝福期待您光临观看。
+           p(style="color:#CC0033;font-size:18px") &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本中心盛大开业之际优惠多多；礼品多多；2014年11月1日—12月31日凡是来本中心报名的学员均享受课时费八折优惠，赠送课时并有礼品赠送。
+           p(style="color:#CC0033;font-size:18px") &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年11月1日—2015年4月30日持本宣传单报名的学员均享受赠送课时的优惠并有礼品赠送。
+
+     .row
+       .col-md-4.animated.bounceInDown(style="text-align:center")
+         img.img-circle(src="./img/logo/logo-02.png")
          h3 德艺课堂
-       p &nbsp;&nbsp;&nbsp;&nbsp;德意美艺术教育培训中心是天津市最大的培训中心之一，教学场地2000多平米，教室宽敞、明亮、舒适，每间教师都有独立空调设施，师资力量雄厚。
-     .col-xs-12.animated.bounceInLeft
-       .row
-         img.col-xs-1.img-circle(src="./img/logo/logo-03.png")
+         p 德意美艺术教育培训中心是天津市最大的培训中心之一，教学场地2000多平米，教室宽敞、明亮、舒适，每间教师都有独立空调设施，师资力量雄厚。
+       .col-md-4.animated.bounceInDown(style="text-align:center")
+         img.img-circle(src="./img/logo/logo-03.png")
          h3 师资风采
-       p &nbsp;&nbsp;&nbsp;&nbsp;每位教师都来自音乐学院专业团体，有多年的教学经验，我校还会定期聘请来自北京及全国各地的名人、明显舞蹈家、演奏家和教授莅临我校指导，使学员们一睹明星风采。最主要的是得到最专业的学习培训，不走弯路。
-     .col-xs-12.animated.bounceInRight
-       .row
-         img.col-xs-1.img-circle(src="./img/logo/logo-04.png")
+         p 每位教师都来自音乐学院专业团体，有多年的教学经验，我校还会定期聘请来自北京及全国各地的名人、明显舞蹈家、演奏家和教授莅临我校指导，使学员们一睹明星风采。最主要的是得到最专业的学习培训，不走弯路。
+       .col-md-4.animated.bounceInDown(style="text-align:center")
+         img.img-circle(src="./img/logo/logo-04.png")
          h3 院校合作
-       p &nbsp;&nbsp;&nbsp;&nbsp;我校和中央电视台、北京电视台及各大卫视挂钩，我校会推荐优秀的学员参加名牌栏目的节目录制、演出、比赛、考级及出国交流等。我校还注重学生的道德教育，在学习艺术期间还会让学生学习国学如家文化，使学生德才兼备，真正做到<strong> 德 艺 美</strong>。
-
-      #blueimp-gallery.blueimp-gallery
-        .slides
-        h3.title 
-        a.prev <
-        a.next >
-        a.close x
-        a.play-pause
-        ol.indicator
-        .modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type="button",aria-hidden="true ") &times;
-                h4.modal-title
-              .modal-body.next
-              .modal-footer
+         p 我校和中央电视台、北京电视台及各大卫视挂钩，我校会推荐优秀的学员参加名牌栏目的节目录制、演出、比赛、考级及出国交流等。我校还注重学生的道德教育，在学习艺术期间还会让学生学习国学儒家文化，使学生德才兼备，真正做到<strong> 德 艺 美</strong>。
 
