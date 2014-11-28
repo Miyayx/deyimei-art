@@ -5,11 +5,10 @@ append head
 append style
   mixin stylesheet('./css/video2.css')
   mixin stylesheet('./css/video.css')
-  mixin stylesheet('http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css')
-  mixin stylesheet('./css/bootstrap-image-gallery.min.css')
+  mixin stylesheet('./css/bootstrap2.min.css')
+  mixin stylesheet('./css/video-default.css')
 append script
-  mixin javascript("http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js")
-  mixin javascript('js/bootstrap-image-gallery.min.js')
+  mixin javascript('js/jquery.video-ui.js')
 block video-bar
   li.active: a(href='#') 影像图片
 block page
@@ -26,38 +25,16 @@ block page
     //  - })
 
     #wall.row-fluid
+      .col-md-6
+        .videoUiWrapper.thumbnail(style="text-align:center")
+          h3 天津德艺美总校开学演出
+          video#demo1(width="480" height="350" poster="./img/news/open-video.jpg" style="margin:0 auto; padding:0")
+            source(src="http://deyimei-art.qiniudn.com/video/天津德艺美总校开学演出-small.mp4" type="video/mp4")
 
-      .col-md-offset-1#componentWrapper
-        h3 天津德艺美总校开学典礼
-        .mediaWrapper
-          .mediaPreview(style="width:700px; height:380px; display:block;")
-            img.col-xs-12(src="./img/news/open-video.jpg")
-          .big_play(style="display:block;")
-      br
-      br
-
-      #blueimp-gallery.blueimp-gallery
-        .slides
-        h3.title 
-        a.prev <
-        a.next >
-        a.close x
-        a.play-pause
-        ol.indicator
-        .modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type="button",aria-hidden="true") &times;
-                h4.modal-title
-              .modal-body.next
-              .modal-footer
-                button.btn.btn-default.pull-left.prev(type="button") 
-                  i.glyphicon.glyphicon-chevron-left 上一个
-                button.btn.btn-primary.next 下一个
-                  i.glyphicon.glyphicon-chevron-right
-
-
-      div
-        a(href='../img/news/picture-wall.jpg')
-          img.col-xs-12(src='../img/news/picture-wall.jpg')
+      .col-md-6(style="text-align:center")
+        .videoUiWrapper.thumbnail(style="text-align:center")
+          h3 德艺美校长与众明星合影
+          br
+          br
+          a(href='../img/news/picture-wall.jpg')
+            img.col-md-12(src='../img/news/picture-wall-small.png')
