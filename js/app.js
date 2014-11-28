@@ -35,5 +35,8 @@ $(document).ready(function() {
 
 	});
 
+    $('video').attr('width','100%');
+    $('.videoController').css('width','100%');
+
 });
 
