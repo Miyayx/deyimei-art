@@ -110,6 +110,19 @@ app.get('/matter', function(req, res) {
 	}));
 });
 
+app.get('/afterclass', function(req, res) {
+	var options = null;
+	options || (options = {});
+	options.client != null || (options.client = true);
+	options.compileDebug != null || (options.compileDebug = false);
+	options.filename || (options.filename = 'afterclass.jade');
+
+	var template = fs.readFileSync('./afterclass.jade');
+	var page = jade.compile(template, options);
+	res.send(page({
+	}));
+});
+
 app.use(express.static(path.join(__dirname, './')));
 app.listen(5000);
 

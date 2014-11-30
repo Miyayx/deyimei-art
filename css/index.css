@@ -29,14 +29,14 @@ body{
   -moz-text-shadow: 0px 0 #FFC0CB, 0 1px #FFC0CB, 1px 0 #FFC0CB, 0 0px #FFC0CB;
   -webkit-text-shadow: 0px 0 #FFC0CB, 0 1px #FFC0CB, 1px 0 #FFC0CB, 0 0px #FFC0CB;
 }
-.navbar-nav li a{
-  font-size:18px;
+.navbar .navbar-nav li a{
+  font-size:17px;
 }
 
-.navbar-inverse .navbar-toggle,.navbar-inverse .navbar-toggle:focus{
+.navbar .navbar-inverse .navbar-toggle,.navbar-inverse .navbar-toggle:focus{
   background-color:#CC0033;
 }
-.navbar-inverse .navbar-toggle:hover{
+.navbar .navbar-inverse .navbar-toggle:hover{
   background-color:rgba(204,0,51,0.6);
 }
 

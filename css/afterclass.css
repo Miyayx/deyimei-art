@@ -1,0 +1,27 @@
+
+#afterclass table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+#afterclass thead th {
+  background-color: #006DCC;
+  color: white;
+  text-align:center;
+}
+
+#afterclass tbody td {
+  background-color: #EEEEEE;
+}
+
+#afterclass tr td:first-child,
+#afterclass tr th:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#afterclass tr td:last-child,
+#afterclass tr th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
