@@ -25,18 +25,18 @@ $(document).ready(function() {
 	});
 
 
-	$('#demo1').videoUI({
-		'autoHide': true,
-		'volumeMedia': 3,
-		'playMedia': true,
-		'progressMedia': true,
-		'timerMedia': true,
-		'fullscreenMedia': true
-
-	});
-
-    $('video').attr('width','100%');
-    $('.videoController').css('width','100%');
+//	$('#demo1').videoUI({
+//		'autoHide': true,
+//		'volumeMedia': 3,
+//		'playMedia': true,
+//		'progressMedia': true,
+//		'timerMedia': true,
+//		'fullscreenMedia': true
+//
+//	});
+//
+//    $('video').attr('width','100%');
+//    $('.videoController').css('width','100%');
 
 });
 

@@ -8,33 +8,14 @@ append style
   mixin stylesheet('./css/bootstrap2.min.css')
   mixin stylesheet('./css/video-default.css')
 append script
-  mixin javascript('js/jquery.video-ui.js')
+  mixin javascript('html5gallery/html5gallery.js')
 block video-bar
   li.active: a(href='#') 影像图片
 block page
   .col-md-9.col-md-offset-1#video
-
-    //#wall.row-fluid.isotope
-    //  - video.forEach(function(n, i){
-    //  .col-md-4.item.isotope-item
-    //    .picture
-    //      a.image
-    //        img(src='#{n.src}' title='#{n.caption}')
-    //      .description
-    //        p #{n.detail}
-    //  - })
-
-    #wall.row-fluid
-      .col-md-6
-        .videoUiWrapper.thumbnail(style="text-align:center")
-          h3 天津德艺美总校开学演出
-          br
-          video#demo1(poster="./img/news/open-video.jpg" style="margin:0 auto; padding:0")
-            source(src="http://deyimei-art.qiniudn.com/video/天津德艺美总校开学演出-small.mp4" type="video/mp4")
-
-      .col-md-6(style="text-align:center")
-        .videoUiWrapper.thumbnail(style="text-align:center")
-          h3 德艺美校长与众明星合影
-          br
-          a(href='../img/news/picture-wall.jpg')
-            img.col-md-12(src='../img/news/picture-wall-small.png')
+    #wall.col-md-offset-1
+      .html5gallery(data-skin="gallery" data-width="800" data-height="600" style="display:none;")
+        a(href='http://deyimei-art.qiniudn.com/video/天津德艺美总校开学演出-small.mp4')
+          img(src="./img/news/open-video.jpg" alt="天津德艺美总校开学演出")
+        a(href='../img/news/picture-wall.jpg')
+          img(src='../img/news/picture-wall-small.png' alt="德艺美校长与众明星合影")
