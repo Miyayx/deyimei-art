@@ -6,6 +6,11 @@ var path = require('path');
 var moment = require('moment');
 var count = 0
 
+//设置跨域访问  
+//app.all('*', function(req, res, next) {  
+//    res.header("Access-Control-Allow-Origin", "*");  
+//}); 
+
 app.get('/', function(req, res) {
     count++;
     var t = moment().zone(-8).format("YYYY-MM-DD HH:mm:ss");
