@@ -33,10 +33,10 @@ body{
   font-size:17px;
 }
 
-.navbar .navbar-inverse .navbar-toggle,.navbar-inverse .navbar-toggle:focus{
+.navbar-inverse .navbar-toggle,.navbar-inverse .navbar-toggle:focus{
   background-color:#CC0033;
 }
-.navbar .navbar-inverse .navbar-toggle:hover{
+.navbar-inverse .navbar-toggle:hover{
   background-color:rgba(204,0,51,0.6);
 }
 

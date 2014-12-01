@@ -51,12 +51,12 @@ append page
       .col-md-12#course
         .row
            //img.col-md-1.img-circle(src="./img/logo/02.png")
-           img.col-md-1.img-circle(src='#{t.logo}')
+           img.col-md-1.col-xs-2.img-circle(src='#{t.logo}')
            h3 #{t.type}
         .row
           - t["course"].forEach(function(c, j){
-          .col-md-3
-            a.thumbnail.col-md-12
+          .col-md-3.col-xs-4
+            a.thumbnail.col-xs-12
               img(src='#{c.src}' alt)
               .course-caption
                 h4.text-center #{c.name}
