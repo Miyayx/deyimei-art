@@ -1,0 +1,39 @@
+
+extends layout
+append head
+  title 中州杯
+append style
+  mixin stylesheet('./css/video.css')
+block zhongzhoubei-bar
+  li.active: a(href='#') 中州杯
+block page
+  .col-md-9.col-md-offset-1#zhongzhoubei
+    .row-fluid
+      .col-xs-5.col-xs-offset-1
+          a(href='../img/zhongzhoubei/poster1.jpg')
+            img.col-xs-12(src='../img/zhongzhoubei/poster1-small.jpg')
+      .col-xs-5
+          a(href='../img/zhongzhoubei/poster2-small.jpg')
+            img.col-xs-12(src='../img/zhongzhoubei/poster2.jpg')
+    br
+    .row-fluid
+      .col-xs-5.col-xs-offset-1
+          a(href='../img/zhongzhoubei/poster3.jpg')
+            img.col-xs-12(src='../img/zhongzhoubei/poster3.jpg')
+      .col-xs-5
+          a(href='../img/zhongzhoubei/poster4.jpg')
+            img.col-xs-12(src='../img/zhongzhoubei/poster4.jpg')
+    br
+    .row-fluid
+      .col-xs-5.col-xs-offset-1
+          a(href='../img/zhongzhoubei/poster5.jpg')
+            img.col-xs-12(src='../img/zhongzhoubei/poster5.jpg')
+      .col-xs-5
+          h3.center 比赛现场花絮
+          a(href='../img/zhongzhoubei/poster6.jpg')
+            img.col-xs-12(src='../img/zhongzhoubei/poster6.jpg')
+          br
+          h3 &nbsp; 
+          h3.center 比赛场地实图
+          a(href='../img/zhongzhoubei/poster7.jpg')
+            img.col-xs-12(src='../img/zhongzhoubei/poster7.jpg')

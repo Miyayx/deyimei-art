@@ -115,6 +115,19 @@ app.get('/matter', function(req, res) {
 	}));
 });
 
+app.get('/zhongzhoubei', function(req, res) {
+	var options = null;
+	options || (options = {});
+	options.client != null || (options.client = true);
+	options.compileDebug != null || (options.compileDebug = false);
+	options.filename || (options.filename = 'zhongzhoubei.jade');
+
+	var template = fs.readFileSync('./zhongzhoubei.jade');
+	var page = jade.compile(template, options);
+	res.send(page({
+	}));
+});
+
 app.get('/afterclass', function(req, res) {
 	var options = null;
 	options || (options = {});
@@ -129,5 +142,8 @@ app.get('/afterclass', function(req, res) {
 });
 
 app.use(express.static(path.join(__dirname, './')));
-app.listen(5000);
+var s = app.listen(5000,'0.0.0.0',function(){
+
+console.log('Listening on port %d:%d', s.address())
+});
 
